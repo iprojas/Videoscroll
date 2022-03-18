@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
 const bgVvideo = document.querySelector("#bgVideo");
-const bgVideoSegments = [0, 20, 30, 60, 80, 90, 100, 120]; // seconds
+const bgVideoSegments = [0, 10, 30, 60, 80, 90, 100, 120]; // seconds
 
 bgVideo.pause();
 bgVideo.currentTime = 0;
@@ -15,7 +15,7 @@ sections.forEach((step,i) => {
     let segmentLength = bgVideoSegments[i+1] - bgVideoSegments[i],
         inc = segmentLength / bgVideoSegments[sections.length];
 
-    step.style.height = segmentLength*100 + "vh";
+    step.style.height = segmentLength*20 + "vh";
 
    	let ST = ScrollTrigger.create({
         trigger: step,
