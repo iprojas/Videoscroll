@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
 const bgVvideo = document.querySelector("#bgVideo");
-const bgVideoSegments = [0, 2, 3, 6, 8, 10, 13, 15]; // seconds
+const bgVideoSegments = [0, 20, 30, 60, 80, 90, 100, 120]; // seconds
 
 bgVideo.pause();
 bgVideo.currentTime = 0;
